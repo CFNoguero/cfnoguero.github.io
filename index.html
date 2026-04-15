@@ -362,7 +362,7 @@
       order: 2;
     }
     .hero-title { font-size: 2.8rem; }
-    .hero-desc { font-size: 0.95rem; }
+    .hero-desc { font-size: 0.95rem; text-align: left; }
 
     /* Stats */
     .hero-bottom { grid-template-columns: 1fr 1fr; }
@@ -372,16 +372,28 @@
 
     /* About */
     .section { padding: 2rem 1.5rem; }
-    .section-header-row { grid-template-columns: 1fr; gap: 0.5rem; }
-    .about-grid { grid-template-columns: 1fr; gap: 2rem; }
-    .skills-title { font-size: 1.6rem; margin-top: 1rem; }
+    .section-header-row {
+      grid-template-columns: 1fr;
+      gap: 0;
+      margin-bottom: 1.5rem;
+    }
+    .skills-title {
+      font-size: 1.6rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+    .about-grid {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+    .about-text { padding-right: 0; }
+    .about-text p { text-align: left; }
 
     /* Contact */
     .contact-section { padding: 2rem 1.5rem; }
     .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
-    .contact-links { align-items: center; }
-    .contact-item { align-items: center; }
-    .contact-tagline { font-size: 1.6rem; text-align: center; }
+    .contact-links { align-items: flex-start; }
+    .contact-item { align-items: flex-start; }
 
     footer { padding: 1.5rem; flex-direction: column; gap: 0.5rem; text-align: center; }
   }
